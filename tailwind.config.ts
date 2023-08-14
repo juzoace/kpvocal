@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        sans: ['Noto Sans', 'sans-serif'], // Add 'Noto Sans' as the first option, followed by a generic fallback
+      },
     },
   },
   plugins: [],
