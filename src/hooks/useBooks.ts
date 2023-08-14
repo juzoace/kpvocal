@@ -13,7 +13,7 @@ const fetchBooks = async ({ pageParam = 1, pageSize = 10 }) => {
   }
 };
 
-const useBooks = (pageSize) => {
+const useBooks = (pageSize: number) => {
   return useInfiniteQuery(
     'books',
     ({ pageParam }) => fetchBooks({ pageParam, pageSize }),

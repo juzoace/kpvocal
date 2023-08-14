@@ -15,10 +15,11 @@ interface Book {
 
 const BookCard:React.FC<componentProps> = ({ book }) => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-slate-50 p-4">
       <div className="flex flex-col justify-center items-center">
 
         {/* <img src={book.imageUrl} alt={book.title} className="w-64 h-64" /> */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={book.imageUrl} alt={book.title} className="w-44 h-48 md:w-64 md:h-64 lg:w-48 lg:h-48 xl:w-64 xl:h-64 2xl:w-96 2xl:h-96" />
 
        

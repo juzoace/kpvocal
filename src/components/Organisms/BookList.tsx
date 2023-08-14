@@ -32,11 +32,11 @@ const BooksList = () => {
         scrollThreshold={0.8}
         endMessage={!hasNextPage && <p className="text-center">No more books to load</p>}
       >
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-center items-center gap-[12px]">
           {data?.pages?.map((page, pageIndex) => (
             <React.Fragment key={pageIndex}>
               {page.map((book: Book) => (
-                <div key={book.id} className="w-1/2 mb-4">
+                <div key={book.id} className="w-[40%] mb-8">
                   <BookCard book={book} />
                 </div>
               ))}
