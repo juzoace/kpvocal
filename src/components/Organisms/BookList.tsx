@@ -30,7 +30,7 @@ const BooksList = () => {
         hasMore={Boolean(hasNextPage)}
         loader={isFetchingNextPage && <p className="text-center">Loading more...</p>}
         scrollThreshold={0.8}
-        endMessage={!hasNextPage && <p className="text-center">No more books to load</p>}
+        endMessage={!hasNextPage && <p className="text-center"></p>}
       >
         <div className="flex flex-wrap justify-center items-center gap-[12px]">
           {data?.pages?.map((page, pageIndex) => (
